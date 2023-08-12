@@ -28,4 +28,4 @@ jobs:
           args: --release
 
       - name: "an apple, a day"
-        run: PATH="$PATH:${{ github.workspace }}" say -v 'Good News' $(pho o1)
+        run: PATH="$PATH:${{ github.workspace }}/target/release" say $(pho o1)
