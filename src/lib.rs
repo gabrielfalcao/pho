@@ -84,138 +84,138 @@ mod tests {
 
     #[test]
     fn a() {
-        assert_eq!(render(String::from("a"), " "), "alpha");
-        assert_eq!(render(String::from("A"), " "), "ALPHA");
+        assert_eq!(render(String::from("a"), " ".to_string()), "alpha");
+        assert_eq!(render(String::from("A"), " ".to_string()), "ALPHA");
     }
     #[test]
     fn b() {
-        assert_eq!(render(String::from("b"), " "), "bravo");
-        assert_eq!(render(String::from("B"), " "), "BRAVO");
+        assert_eq!(render(String::from("b"), " ".to_string()), "bravo");
+        assert_eq!(render(String::from("B"), " ".to_string()), "BRAVO");
     }
     #[test]
     fn c() {
-        assert_eq!(render(String::from("c"), " "), "charlie");
-        assert_eq!(render(String::from("C"), " "), "CHARLIE");
+        assert_eq!(render(String::from("c"), " ".to_string()), "charlie");
+        assert_eq!(render(String::from("C"), " ".to_string()), "CHARLIE");
     }
     #[test]
     fn d() {
-        assert_eq!(render(String::from("d"), " "), "delta");
-        assert_eq!(render(String::from("D"), " "), "DELTA");
+        assert_eq!(render(String::from("d"), " ".to_string()), "delta");
+        assert_eq!(render(String::from("D"), " ".to_string()), "DELTA");
     }
     #[test]
     fn e() {
-        assert_eq!(render(String::from("e"), " "), "echo");
-        assert_eq!(render(String::from("E"), " "), "ECHO");
+        assert_eq!(render(String::from("e"), " ".to_string()), "echo");
+        assert_eq!(render(String::from("E"), " ".to_string()), "ECHO");
     }
     #[test]
     fn f() {
-        assert_eq!(render(String::from("f"), " "), "foxtrot");
-        assert_eq!(render(String::from("F"), " "), "FOXTROT");
+        assert_eq!(render(String::from("f"), " ".to_string()), "foxtrot");
+        assert_eq!(render(String::from("F"), " ".to_string()), "FOXTROT");
     }
     #[test]
     fn g() {
-        assert_eq!(render(String::from("g"), " "), "golf");
-        assert_eq!(render(String::from("G"), " "), "GOLF");
+        assert_eq!(render(String::from("g"), " ".to_string()), "golf");
+        assert_eq!(render(String::from("G"), " ".to_string()), "GOLF");
     }
     #[test]
     fn h() {
-        assert_eq!(render(String::from("h"), " "), "hotel");
-        assert_eq!(render(String::from("H"), " "), "HOTEL");
+        assert_eq!(render(String::from("h"), " ".to_string()), "hotel");
+        assert_eq!(render(String::from("H"), " ".to_string()), "HOTEL");
     }
     #[test]
     fn i() {
-        assert_eq!(render(String::from("i"), " "), "india");
-        assert_eq!(render(String::from("I"), " "), "INDIA");
+        assert_eq!(render(String::from("i"), " ".to_string()), "india");
+        assert_eq!(render(String::from("I"), " ".to_string()), "INDIA");
     }
     #[test]
     fn j() {
-        assert_eq!(render(String::from("j"), " "), "juliet");
-        assert_eq!(render(String::from("J"), " "), "JULIET");
+        assert_eq!(render(String::from("j"), " ".to_string()), "juliet");
+        assert_eq!(render(String::from("J"), " ".to_string()), "JULIET");
     }
     #[test]
     fn k() {
-        assert_eq!(render(String::from("k"), " "), "kilo");
-        assert_eq!(render(String::from("K"), " "), "KILO");
+        assert_eq!(render(String::from("k"), " ".to_string()), "kilo");
+        assert_eq!(render(String::from("K"), " ".to_string()), "KILO");
     }
     #[test]
     fn l() {
-        assert_eq!(render(String::from("l"), " "), "lima");
-        assert_eq!(render(String::from("L"), " "), "LIMA");
+        assert_eq!(render(String::from("l"), " ".to_string()), "lima");
+        assert_eq!(render(String::from("L"), " ".to_string()), "LIMA");
     }
     #[test]
     fn m() {
-        assert_eq!(render(String::from("m"), " "), "mike");
-        assert_eq!(render(String::from("M"), " "), "MIKE");
+        assert_eq!(render(String::from("m"), " ".to_string()), "mike");
+        assert_eq!(render(String::from("M"), " ".to_string()), "MIKE");
     }
     #[test]
     fn n() {
-        assert_eq!(render(String::from("n"), " "), "november");
-        assert_eq!(render(String::from("N"), " "), "NOVEMBER");
+        assert_eq!(render(String::from("n"), " ".to_string()), "november");
+        assert_eq!(render(String::from("N"), " ".to_string()), "NOVEMBER");
     }
     #[test]
     fn o() {
-        assert_eq!(render(String::from("o"), " "), "oscar");
-        assert_eq!(render(String::from("O"), " "), "OSCAR");
+        assert_eq!(render(String::from("o"), " ".to_string()), "oscar");
+        assert_eq!(render(String::from("O"), " ".to_string()), "OSCAR");
     }
     #[test]
     fn p() {
-        assert_eq!(render(String::from("p"), " "), "papa");
-        assert_eq!(render(String::from("P"), " "), "PAPA");
+        assert_eq!(render(String::from("p"), " ".to_string()), "papa");
+        assert_eq!(render(String::from("P"), " ".to_string()), "PAPA");
     }
     #[test]
     fn q() {
-        assert_eq!(render(String::from("q"), " "), "quebec");
-        assert_eq!(render(String::from("Q"), " "), "QUEBEC");
+        assert_eq!(render(String::from("q"), " ".to_string()), "quebec");
+        assert_eq!(render(String::from("Q"), " ".to_string()), "QUEBEC");
     }
     #[test]
     fn r() {
-        assert_eq!(render(String::from("r"), " "), "romeo");
-        assert_eq!(render(String::from("R"), " "), "ROMEO");
+        assert_eq!(render(String::from("r"), " ".to_string()), "romeo");
+        assert_eq!(render(String::from("R"), " ".to_string()), "ROMEO");
     }
     #[test]
     fn s() {
-        assert_eq!(render(String::from("s"), " "), "sierra");
-        assert_eq!(render(String::from("S"), " "), "SIERRA");
+        assert_eq!(render(String::from("s"), " ".to_string()), "sierra");
+        assert_eq!(render(String::from("S"), " ".to_string()), "SIERRA");
     }
     #[test]
     fn t() {
-        assert_eq!(render(String::from("t"), " "), "tango");
-        assert_eq!(render(String::from("T"), " "), "TANGO");
+        assert_eq!(render(String::from("t"), " ".to_string()), "tango");
+        assert_eq!(render(String::from("T"), " ".to_string()), "TANGO");
     }
     #[test]
     fn u() {
-        assert_eq!(render(String::from("u"), " "), "uniform");
-        assert_eq!(render(String::from("U"), " "), "UNIFORM");
+        assert_eq!(render(String::from("u"), " ".to_string()), "uniform");
+        assert_eq!(render(String::from("U"), " ".to_string()), "UNIFORM");
     }
     #[test]
     fn v() {
-        assert_eq!(render(String::from("v"), " "), "victor");
-        assert_eq!(render(String::from("V"), " "), "VICTOR");
+        assert_eq!(render(String::from("v"), " ".to_string()), "victor");
+        assert_eq!(render(String::from("V"), " ".to_string()), "VICTOR");
     }
     #[test]
     fn w() {
-        assert_eq!(render(String::from("w"), " "), "whiskey");
-        assert_eq!(render(String::from("W"), " "), "WHISKEY");
+        assert_eq!(render(String::from("w"), " ".to_string()), "whiskey");
+        assert_eq!(render(String::from("W"), " ".to_string()), "WHISKEY");
     }
     #[test]
     fn x() {
-        assert_eq!(render(String::from("x"), " "), "xray");
-        assert_eq!(render(String::from("X"), " "), "XRAY");
+        assert_eq!(render(String::from("x"), " ".to_string()), "xray");
+        assert_eq!(render(String::from("X"), " ".to_string()), "XRAY");
     }
     #[test]
     fn y() {
-        assert_eq!(render(String::from("y"), " "), "yankee");
-        assert_eq!(render(String::from("Y"), " "), "YANKEE");
+        assert_eq!(render(String::from("y"), " ".to_string()), "yankee");
+        assert_eq!(render(String::from("Y"), " ".to_string()), "YANKEE");
     }
     #[test]
     fn z() {
-        assert_eq!(render(String::from("z"), " "), "zulu");
-        assert_eq!(render(String::from("Z"), " "), "ZULU");
+        assert_eq!(render(String::from("z"), " ".to_string()), "zulu");
+        assert_eq!(render(String::from("Z"), " ".to_string()), "ZULU");
     }
 
     #[test]
     fn operation_1() {
-        assert_eq!(render(String::from("operation 1"), " "), "oscar papa echo romeo alpha tango india oscar november 1");
+        assert_eq!(render(String::from("operation 1"), " ".to_string()), "oscar papa echo romeo alpha tango india oscar november 1");
     }
 
 }
