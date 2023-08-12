@@ -11,10 +11,13 @@ license = "GPL-3.0-or-later"
 
 [dependencies]
 clap = { version = "4.3.2", features = ["derive", "env", "unicode", "string", "wrap_help"] }
+console_error_panic_hook = "0.1.7"
 wasm-bindgen = "0.2.86"
+wee_alloc = "0.4.5"
 
 
 [lib]
+crate-type = ["cdylib", "rlib"]
 name = "pho"
 path = "src/lib.rs"
 
@@ -22,3 +25,6 @@ path = "src/lib.rs"
 name = "pho"
 path = "src/main.rs"
 bench = false
+
+[dev-dependencies]
+wasm-bindgen-test = { version = "0.3.37", features = ["gg-alloc"] }
