@@ -7,7 +7,7 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 /// Renders a string to phonetic alphabet. Keeps unknown characters unchanged.
-pub fn render(data: String, sep: &str) -> String {
+pub fn render(data: String, sep: String) -> String {
     let mut r = Vec::<String>::new();
     for o in data.bytes() {
         let x = match o {
@@ -74,7 +74,7 @@ pub fn render(data: String, sep: &str) -> String {
             r.push(x);
         };
     }
-    let m = r.iter().filter(|c| c.len() > 0).map(|v| v.clone()).collect::<Vec<_>>().join(sep);
+    let m = r.iter().filter(|c| c.len() > 0).map(|v| v.clone()).collect::<Vec<_>>().join(&sep);
     String::from(m)
 }
 
