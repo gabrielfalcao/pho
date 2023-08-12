@@ -5,7 +5,7 @@ Phonetic Alphabet Renderer
 ## Install
 
 ``` bash
-cargo install phonetics
+cargo install pho
 ```
 
 ## Usage Example...
