@@ -3,9 +3,9 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn render(data: String, sep: &str) -> String {
-    let mut r = Vec::<&str>::new();
+    let mut r = Vec::<String>::new();
     for o in data.bytes() {
-        r.push(match o {
+        let x = match o {
             b'a' | b'A' => "alpha",
             b'b' | b'B' => "bravo",
             b'c' | b'C' => "charlie",
@@ -32,10 +32,18 @@ pub fn render(data: String, sep: &str) -> String {
             b'x' | b'X' => "xray",
             b'y' | b'Y' => "yankee",
             b'z' | b'Z' => "zulu",
-            0_u8..=96_u8 | 98_u8..=u8::MAX => sep
-        });
+            _ => "",
+        }.to_string();
+
+        if &x == "" {
+            if String::from_utf8_lossy(&[o]) != sep {
+                r.push(format!("{}", o as char));
+            }
+        } else {
+            r.push(x);
+        };
     }
-    let m = r.join(sep);
+    let m = r.iter().filter(|c| c.len() > 0).map(|v| v.clone()).collect::<Vec<_>>().join(sep);
     String::from(m)
 }
 
@@ -147,4 +155,10 @@ mod tests {
     fn z() {
         assert_eq!(render(String::from("z"), " "), "zulu");
     }
+
+    #[test]
+    fn operation_1() {
+        assert_eq!(render(String::from("operation 1"), " "), "oscar papa echo romeo alpha tango india oscar november 1");
+    }
+
 }

@@ -8,9 +8,15 @@ Phonetic Alphabet Renderer
 cargo install phonetics
 ```
 
-## Usage Example
+## Usage Example...
 
 ``` bash
 $ pho hi
 hotel india
+```
+
+
+``` bash
+$ pho one
+oscar november echo
 ```
