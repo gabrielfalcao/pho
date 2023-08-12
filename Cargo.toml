@@ -1,0 +1,24 @@
+[package]
+name = "pho"
+version = "0.1.0"
+edition = "2021"
+documentation = "https://docs.rs/pho"
+description = "PHOnetic alphabet renderer"
+readme = "README.rst"
+license = "GPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.3.2", features = ["derive", "env", "unicode", "string", "wrap_help"] }
+wasm-bindgen = "0.2.86"
+
+
+[lib]
+name = "pho"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pho"
+path = "src/main.rs"
+bench = false
