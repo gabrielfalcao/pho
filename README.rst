@@ -1,7 +1,7 @@
 Phõ 🍜
 ------
 
-**Pho**netic Alphabet Renderer
+Phonetic Alphabet Renderer
 
 
 Install
