@@ -5,6 +5,7 @@ use wasm_bindgen::prelude::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 
+/// Renders a string to phonetic alphabet. Keeps unknown characters unchanged.
 #[wasm_bindgen]
 pub fn render(data: String, sep: &str) -> String {
     let mut r = Vec::<String>::new();
