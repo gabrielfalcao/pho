@@ -6,6 +6,7 @@ documentation = "https://docs.rs/pho"
 description = "PHOnetic alphabet renderer"
 readme = "README.md"
 license = "GPL-3.0-or-later"
+repository = "https://github.com/gabrielfalcao/pho"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
